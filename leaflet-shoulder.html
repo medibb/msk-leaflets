@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>어깨 재활 홈운동 가이드 - 부산대학교병원 재활의학과</title>
+<style>
+  @page { size: A4; margin: 12mm 15mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Malgun Gothic', '맑은 고딕', sans-serif; font-size: 10pt; line-height: 1.5; color: #222; }
+
+  .page { width: 210mm; min-height: 297mm; padding: 10mm 12mm; page-break-after: always; }
+  .page:last-child { page-break-after: avoid; }
+
+  h1 { font-size: 16pt; text-align: center; color: #1a5276; border-bottom: 3px solid #1a5276; padding-bottom: 6px; margin-bottom: 8px; }
+  h2 { font-size: 12pt; color: #fff; background: #1a5276; padding: 4px 10px; margin: 10px 0 6px 0; border-radius: 4px; }
+  h3 { font-size: 10.5pt; color: #1a5276; margin: 8px 0 4px 0; border-left: 4px solid #1a5276; padding-left: 8px; }
+
+  .subtitle { text-align: center; font-size: 10pt; color: #555; margin-bottom: 10px; }
+  .hospital { text-align: center; font-size: 9pt; color: #888; margin-bottom: 6px; }
+
+  .exercise-card { border: 1px solid #d5d8dc; border-radius: 6px; padding: 8px 10px; margin-bottom: 8px; background: #fafafa; }
+  .exercise-card .title { font-weight: bold; color: #1a5276; font-size: 10.5pt; margin-bottom: 3px; }
+  .exercise-card .video-tag { display: inline-block; background: #e74c3c; color: #fff; font-size: 7.5pt; padding: 1px 6px; border-radius: 10px; margin-left: 4px; vertical-align: middle; }
+  .exercise-card .method { margin: 4px 0; padding-left: 16px; }
+  .exercise-card .method li { margin-bottom: 2px; }
+  .exercise-card .dose { background: #eaf2f8; padding: 4px 8px; border-radius: 4px; font-size: 9.5pt; margin-top: 4px; }
+  .exercise-card .tip { color: #c0392b; font-size: 9pt; margin-top: 3px; font-weight: bold; }
+
+  .danger-box { border: 2px solid #e74c3c; border-radius: 6px; padding: 8px 10px; margin: 8px 0; background: #fdedec; }
+  .danger-box .title { color: #e74c3c; font-weight: bold; font-size: 11pt; margin-bottom: 4px; }
+  .danger-box ul { padding-left: 18px; }
+  .danger-box li { margin-bottom: 2px; color: #922b21; }
+
+  .safety-box { border: 2px solid #27ae60; border-radius: 6px; padding: 8px 10px; margin: 8px 0; background: #eafaf1; }
+  .safety-box .title { color: #27ae60; font-weight: bold; font-size: 11pt; margin-bottom: 4px; }
+
+  .info-box { border: 1px solid #f0b27a; border-radius: 6px; padding: 8px 10px; margin: 8px 0; background: #fef9e7; }
+  .info-box .title { color: #e67e22; font-weight: bold; margin-bottom: 4px; }
+
+  .phase-label { display: inline-block; background: #27ae60; color: #fff; font-size: 8pt; padding: 2px 8px; border-radius: 10px; font-weight: bold; }
+  .phase-label.p2 { background: #2980b9; }
+  .phase-label.p3 { background: #8e44ad; }
+
+  .two-col { display: flex; gap: 10px; }
+  .two-col > div { flex: 1; }
+
+  .footer { text-align: center; font-size: 8pt; color: #999; margin-top: 10px; border-top: 1px solid #ddd; padding-top: 4px; }
+
+  table.schedule { width: 100%; border-collapse: collapse; font-size: 9pt; margin: 6px 0; }
+  table.schedule th { background: #1a5276; color: #fff; padding: 4px 6px; text-align: left; }
+  table.schedule td { border: 1px solid #d5d8dc; padding: 4px 6px; }
+  table.schedule tr:nth-child(even) { background: #f8f9fa; }
+
+  .band-guide { display: flex; gap: 6px; margin: 6px 0; }
+  .band-chip { padding: 3px 10px; border-radius: 12px; font-size: 8.5pt; font-weight: bold; color: #fff; text-align: center; }
+  .band-yellow { background: #d4ac0d; }
+  .band-red { background: #e74c3c; }
+  .band-green { background: #27ae60; }
+  .band-blue { background: #2980b9; }
+
+  .highlight { background: #f9e79f; padding: 1px 4px; border-radius: 2px; }
+
+  @media print {
+    .page { padding: 8mm 10mm; }
+    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Page 1 -->
+<div class="page">
+  <h1>어깨 통증 홈운동 가이드</h1>
+  <p class="subtitle">PNUH 회전근개 재활 프로토콜 &mdash; 초진 환자용</p>
+  <p class="hospital">부산대학교병원 재활의학과</p>
+
+  <div class="danger-box">
+    <div class="title">&#9888; 절대 하지 마세요! (금기 운동/자세)</div>
+    <ul>
+      <li><strong>Empty can (엄지 아래로 팔 올리기)</strong> &mdash; 견봉 충돌 위험! &rarr; Full can (엄지 위로)으로</li>
+      <li><strong>Band pull-apart 손바닥 아래로</strong> &mdash; 충돌 위험 &rarr; <span class="highlight">반드시 손바닥 위로!</span></li>
+      <li><strong>90&deg; 벌리고 내회전</strong> &mdash; 회전근개에 극단적 부하 (subscap 278%!)</li>
+      <li><strong>머리 위 활동(Overhead)</strong> &mdash; Phase III 전까지 제한</li>
+      <li><strong>아픈 쪽으로 옆으로 잠자기</strong> &mdash; 수면 시 압박 주의</li>
+    </ul>
+  </div>
+
+  <h2>Phase I: 급성기 운동 (0~3주)</h2>
+
+  <div class="two-col">
+    <div>
+      <div class="exercise-card">
+        <div class="title">1. Pendulum 운동 <span class="phase-label">Phase I</span> <span class="video-tag">&#9654; S01</span></div>
+        <ul class="method">
+          <li>상체 숙여 아픈 팔 늘어뜨리기</li>
+          <li>전후, 좌우, 원형으로 흔들기</li>
+          <li><strong>팔에 힘 빼고</strong> 몸통으로 흔들기</li>
+        </ul>
+        <div class="dose">&#128338; <strong>2분 &times; 하루 3회</strong></div>
+      </div>
+
+      <div class="exercise-card">
+        <div class="title">2. Table Slide <span class="phase-label">Phase I</span> <span class="video-tag">&#9654; S02</span></div>
+        <ul class="method">
+          <li>테이블 위 수건에 손 올려놓기</li>
+          <li>천천히 앞으로 밀기</li>
+          <li>가장 안전 (SSP 5%)</li>
+        </ul>
+        <div class="dose">&#128338; <strong>10회 &times; 3세트 &times; 하루 3회</strong></div>
+        <div class="tip">&#128161; 풀리보다 훨씬 안전합니다!</div>
+      </div>
+    </div>
+    <div>
+      <div class="exercise-card">
+        <div class="title">3. L-bar 보조 ROM <span class="phase-label">Phase I</span> <span class="video-tag">&#9654; S03</span></div>
+        <ul class="method">
+          <li>누워서 L-bar(긴 막대) 잡기</li>
+          <li>건강한 팔이 아픈 팔을 도와 움직이기</li>
+          <li>굴곡(올리기) &amp; 외회전</li>
+        </ul>
+        <div class="dose">&#128338; <strong>10회 &times; 3세트 &times; 하루 3회</strong></div>
+      </div>
+
+      <div class="exercise-card">
+        <div class="title">4. Scapular Shrug <span class="phase-label">Phase I</span> <span class="video-tag">&#9654; S04</span></div>
+        <ul class="method">
+          <li>어깨뼈 으쓱(올리기-내리기)</li>
+          <li>어깨뼈 모으기-벌리기</li>
+          <li>어깨 관절은 움직이지 않기</li>
+        </ul>
+        <div class="dose">&#128338; <strong>10초 유지 &times; 10회 &times; 3세트 &times; 하루 3회</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-box">
+    <div class="title">&#128161; Phase I 핵심 원칙</div>
+    <ul style="padding-left: 18px;">
+      <li>이 시기의 목표: <strong>통증/염증 조절 + 관절 굳지 않게 하기</strong></li>
+      <li>능동적 힘쓰기 운동은 아직 하지 않습니다 (SSP 43~48% 활성!)</li>
+      <li>밤에 통증이 있다면 담당의에게 알려주세요</li>
+    </ul>
+  </div>
+
+  <h2>Phase II-1: 초기 강화 (3~6주, 담당의 확인 후)</h2>
+
+  <div class="two-col">
+    <div>
+      <div class="exercise-card">
+        <div class="title">5. 등척성 외회전/내회전 <span class="phase-label p2">Phase II-1</span> <span class="video-tag">&#9654; S05</span></div>
+        <ul class="method">
+          <li>문틀/벽에 대고 밀기 (움직이지 않기)</li>
+          <li>팔꿈치 90&deg;, 몸통 옆에 붙이기</li>
+          <li>최대 힘의 50~70%로</li>
+        </ul>
+        <div class="dose">&#128338; <strong>10초 &times; 10회 &times; 3세트 &times; 하루 3회</strong></div>
+      </div>
+
+      <div class="exercise-card">
+        <div class="title">6. Band 외회전 (Yellow/Red) <span class="phase-label p2">Phase II-1</span> <span class="video-tag">&#9654; S06</span></div>
+        <ul class="method">
+          <li>팔꿈치 옆구리에 붙이기 (0&deg;)</li>
+          <li>밴드를 바깥으로 회전</li>
+          <li>천천히 돌리고 천천히 복귀</li>
+        </ul>
+        <div class="band-guide">
+          <span class="band-chip band-yellow">Yellow (16~18%)</span>
+          <span class="band-chip band-red">Red (17~20%)</span>
+        </div>
+        <div class="dose">&#128338; <strong>15회 &times; 3세트 &times; 하루 1회</strong></div>
+        <div class="tip">&#9888; 0&deg;(팔 붙인 상태)에서만! 벌리지 않기</div>
+      </div>
+    </div>
+    <div>
+      <div class="exercise-card">
+        <div class="title">7. Wall Clock &amp; Wall Slide <span class="phase-label p2">Phase II-1</span> <span class="video-tag">&#9654; S07</span></div>
+        <ul class="method">
+          <li>벽에 공/손 대고 시계방향 원형</li>
+          <li>벽에서 팔 위아래 슬라이드</li>
+          <li>어깨뼈 따라 움직이기 학습</li>
+        </ul>
+        <div class="dose">&#128338; <strong>15회 &times; 3세트 &times; 하루 1회</strong></div>
+      </div>
+
+      <div class="exercise-card">
+        <div class="title">8. 벽 Push-up Plus <span class="phase-label p2">Phase II-1</span> <span class="video-tag">&#9654; S08</span></div>
+        <ul class="method">
+          <li>벽에서 팔굽혀펴기</li>
+          <li>팔 다 편 후 <strong>어깨뼈를 더 밀어내기</strong></li>
+          <li>전거근(날개뼈 근육) 강화</li>
+        </ul>
+        <div class="dose">&#128338; <strong>15회 &times; 3세트 &times; 하루 1회</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    PNUH 재활의학과 | 어깨 재활 홈운동 가이드 (1/2) | &#128247; YouTube 영상 번호로 검색하세요
+  </div>
+</div>
+
+<!-- Page 2 -->
+<div class="page">
+  <h1>어깨 통증 홈운동 가이드 (계속)</h1>
+
+  <h2>Phase II-2: 중급 강화 (6~12주, 담당의 확인 후)</h2>
+
+  <div class="two-col">
+    <div>
+      <div class="exercise-card">
+        <div class="title">9. Band 외회전 45&deg; (Green) <span class="phase-label p2">Phase II-2</span> <span class="video-tag">&#9654; S09</span></div>
+        <ul class="method">
+          <li>팔 45&deg; 벌린 상태에서 외회전</li>
+          <li>SSP/ISP 동시 강화 최적 각도</li>
+          <li>통증 시 0&deg;로 복귀</li>
+        </ul>
+        <div class="band-guide">
+          <span class="band-chip band-green">Green (20~24%)</span>
+        </div>
+        <div class="dose">&#128338; <strong>15회 &times; 3세트 &times; 하루 1회</strong></div>
+        <div class="tip">&#9888; 90&deg;는 아직 금지!</div>
+      </div>
+
+      <div class="exercise-card">
+        <div class="title">10. Band Pull-Apart <span class="phase-label p2">Phase II-2</span> <span class="video-tag">&#9654; S10</span></div>
+        <ul class="method">
+          <li>양손으로 밴드 잡고 수평으로 벌리기</li>
+          <li><span class="highlight">반드시 손바닥 위로!</span> (palm-up)</li>
+          <li>ISP 49.5%, LT 62.4% 활성</li>
+        </ul>
+        <div class="dose">&#128338; <strong>15회 &times; 3세트 &times; 하루 1회</strong></div>
+        <div class="tip">&#9888; 손바닥 아래로 하면 충돌 위험!</div>
+      </div>
+    </div>
+    <div>
+      <div class="exercise-card">
+        <div class="title">11. Wall Angel <span class="phase-label p2">Phase II-2</span> <span class="video-tag">&#9654; S12</span></div>
+        <ul class="method">
+          <li>벽에 등·팔꿈치·손등 붙이기</li>
+          <li>팔을 위아래로 천천히 움직이기</li>
+          <li>벽에서 떨어지지 않게 유지</li>
+        </ul>
+        <div class="dose">&#128338; <strong>10회 &times; 3세트 &times; 하루 1회</strong></div>
+      </div>
+
+      <div class="exercise-card">
+        <div class="title">12. Push-up Plus 진행 <span class="phase-label p2">Phase II-2</span> <span class="video-tag">&#9654; S11</span></div>
+        <ul class="method">
+          <li>벽 &rarr; 테이블 &rarr; 바닥 순서 진행</li>
+          <li>RC 50% 이상 확인 후 진행</li>
+        </ul>
+        <div class="dose">&#128338; <strong>15회 &times; 3세트 &times; 하루 1회</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Phase III 운동 &mdash; 담당의 확인 후 진행</h2>
+  <div class="info-box">
+    <div class="title">&#9888; Phase III는 충분한 근력 기반 확보 후 시작합니다</div>
+    <table class="schedule">
+      <tr>
+        <th>운동</th><th>영상</th><th>핵심 포인트</th><th>용량</th>
+      </tr>
+      <tr>
+        <td>Side-lying ER (덤벨)</td>
+        <td>S13</td>
+        <td>옆으로 누워 외회전, 0.5~1kg 시작<br>치료실 확인 후 HEP</td>
+        <td>10회&times;3세트<br>1회/일</td>
+      </tr>
+      <tr>
+        <td>Full Can (견갑면 거상)</td>
+        <td>S14</td>
+        <td><span class="highlight">엄지 위로!</span> 어깨 높이까지만<br>Empty can 절대 금지</td>
+        <td>10회&times;3세트<br>1회/일</td>
+      </tr>
+      <tr>
+        <td>Blackburn T/W/Y (맨손)</td>
+        <td>S15</td>
+        <td>엎드려서 T/W/Y 들어올리기<br>맨손 2~4주 &rarr; 덤벨 진행</td>
+        <td>10회&times;3세트<br>1회/일</td>
+      </tr>
+      <tr>
+        <td>Eccentric ER/IR (밴드)</td>
+        <td>S16</td>
+        <td>천천히 버티며 돌아오기 (3~5초)<br>비손상 건부터 시작</td>
+        <td>10회&times;3세트<br>1회/일</td>
+      </tr>
+    </table>
+  </div>
+
+  <h3>밴드 색상별 저항 가이드</h3>
+  <table class="schedule">
+    <tr>
+      <th>밴드 색상</th><th>저항</th><th>ISP 활성도</th><th>적용 Phase</th>
+    </tr>
+    <tr>
+      <td><span class="band-chip band-yellow">Yellow</span></td>
+      <td>~5N</td>
+      <td>16~18%</td>
+      <td>Phase II-1 (시작점)</td>
+    </tr>
+    <tr>
+      <td><span class="band-chip band-red">Red</span></td>
+      <td>~8N</td>
+      <td>17~20%</td>
+      <td>Phase II-1~2</td>
+    </tr>
+    <tr>
+      <td><span class="band-chip band-green">Green</span></td>
+      <td>~11N</td>
+      <td>20~24%</td>
+      <td>Phase II-2</td>
+    </tr>
+    <tr>
+      <td><span class="band-chip band-blue">Blue</span></td>
+      <td>~15N</td>
+      <td>23~30%</td>
+      <td>Phase III</td>
+    </tr>
+  </table>
+
+  <div class="safety-box">
+    <div class="title">&#128154; 안전 수칙</div>
+    <table class="schedule">
+      <tr>
+        <th style="background:#27ae60; width:50%">&#9989; 이렇게 하세요</th>
+        <th style="background:#e74c3c; width:50%">&#10060; 이건 피하세요</th>
+      </tr>
+      <tr>
+        <td>
+          &bull; 통증 없는 범위에서만 운동<br>
+          &bull; 밴드 색상은 Phase에 맞게<br>
+          &bull; 운동 후 통증 증가 시 이전 단계로<br>
+          &bull; 분할 프로그램 (격일 교대) 권장
+        </td>
+        <td>
+          &bull; Empty can (엄지 아래로) &#10060;<br>
+          &bull; 90&deg; 벌려서 내회전 &#10060;<br>
+          &bull; 풀리 사용 (Phase I) &#10060;<br>
+          &bull; 머리 위 동작 (Phase III 전) &#10060;<br>
+          &bull; 과도한 저항 밴드 &#10060;
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="info-box">
+    <div class="title">&#128197; Phase I 하루 스케줄</div>
+    <table class="schedule">
+      <tr><th>시간</th><th>운동</th><th>용량</th></tr>
+      <tr><td>아침</td><td>Pendulum + Table slide<br>L-bar AAROM + Scapular shrug</td><td>2분 + 10회&times;3세트<br>10회&times;3세트 + 10초&times;10회&times;3세트</td></tr>
+      <tr><td>점심</td><td>Pendulum + Table slide<br>L-bar AAROM + Scapular shrug</td><td>동일</td></tr>
+      <tr><td>저녁</td><td>Pendulum + Table slide<br>L-bar AAROM + Scapular shrug</td><td>동일</td></tr>
+    </table>
+  </div>
+
+  <div class="footer">
+    PNUH 재활의학과 | 어깨 재활 홈운동 가이드 (2/2) | 담당의 지시에 따라 Phase를 진행하세요<br>
+    환자명: _________________ | 진료일: ______년 ______월 ______일 | 담당의: _________________
+  </div>
+</div>
+
+</body>
+</html>
