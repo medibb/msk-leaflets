@@ -3,58 +3,55 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>요추 재활 홈운동 가이드 - 부산대학교병원 재활의학과</title>
+<title>허리 통증 홈운동 가이드 - 부산대학교병원 재활의학과</title>
 <style>
-  @page { size: A4; margin: 12mm 15mm; }
+  @page { size: A4; margin: 12mm 14mm; }
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'Malgun Gothic', '맑은 고딕', sans-serif; font-size: 10pt; line-height: 1.5; color: #222; }
+  body { font-family: 'Malgun Gothic', '맑은 고딕', sans-serif; font-size: 9.5pt; line-height: 1.45; color: #222; }
 
-  .page { width: 210mm; min-height: 297mm; padding: 10mm 12mm; page-break-after: always; }
+  .page { width: 210mm; min-height: 297mm; padding: 8mm 11mm; page-break-after: always; }
   .page:last-child { page-break-after: avoid; }
 
-  h1 { font-size: 16pt; text-align: center; color: #1a5276; border-bottom: 3px solid #1a5276; padding-bottom: 6px; margin-bottom: 8px; }
-  h2 { font-size: 12pt; color: #fff; background: #1a5276; padding: 4px 10px; margin: 10px 0 6px 0; border-radius: 4px; }
-  h3 { font-size: 10.5pt; color: #1a5276; margin: 8px 0 4px 0; border-left: 4px solid #1a5276; padding-left: 8px; }
+  h1 { font-size: 15pt; text-align: center; color: #1a5276; border-bottom: 3px solid #1a5276; padding-bottom: 5px; margin-bottom: 6px; }
+  h2 { font-size: 11pt; color: #fff; background: #1a5276; padding: 3px 10px; margin: 8px 0 5px 0; border-radius: 4px; }
 
-  .subtitle { text-align: center; font-size: 10pt; color: #555; margin-bottom: 10px; }
-  .hospital { text-align: center; font-size: 9pt; color: #888; margin-bottom: 6px; }
+  .subtitle { text-align: center; font-size: 9.5pt; color: #555; margin-bottom: 4px; }
+  .hospital { text-align: center; font-size: 8.5pt; color: #888; margin-bottom: 6px; }
 
-  .exercise-card { border: 1px solid #d5d8dc; border-radius: 6px; padding: 8px 10px; margin-bottom: 8px; background: #fafafa; }
-  .exercise-card .title { font-weight: bold; color: #1a5276; font-size: 10.5pt; margin-bottom: 3px; }
-  .exercise-card .video-tag { display: inline-block; background: #e74c3c; color: #fff; font-size: 7.5pt; padding: 1px 6px; border-radius: 10px; margin-left: 4px; vertical-align: middle; }
-  .exercise-card .method { margin: 4px 0; padding-left: 16px; }
-  .exercise-card .method li { margin-bottom: 2px; }
-  .exercise-card .dose { background: #eaf2f8; padding: 4px 8px; border-radius: 4px; font-size: 9.5pt; margin-top: 4px; }
-  .exercise-card .tip { color: #c0392b; font-size: 9pt; margin-top: 3px; font-weight: bold; }
+  .card { border: 1px solid #d5d8dc; border-radius: 6px; padding: 6px 9px; margin-bottom: 6px; background: #fafafa; }
+  .card .name { font-weight: bold; color: #1a5276; font-size: 10pt; margin-bottom: 2px; }
+  .card ul { margin: 3px 0; padding-left: 16px; }
+  .card li { margin-bottom: 1px; }
+  .card .dose { background: #eaf2f8; padding: 3px 7px; border-radius: 3px; font-size: 9pt; margin-top: 3px; }
+  .card .warn { color: #c0392b; font-size: 8.5pt; margin-top: 2px; font-weight: bold; }
 
-  .danger-box { border: 2px solid #e74c3c; border-radius: 6px; padding: 8px 10px; margin: 8px 0; background: #fdedec; }
-  .danger-box .title { color: #e74c3c; font-weight: bold; font-size: 11pt; margin-bottom: 4px; }
-  .danger-box ul { padding-left: 18px; }
-  .danger-box li { margin-bottom: 2px; color: #922b21; }
+  .danger { border: 2px solid #e74c3c; border-radius: 6px; padding: 6px 9px; margin: 6px 0; background: #fdedec; }
+  .danger .title { color: #e74c3c; font-weight: bold; font-size: 10pt; margin-bottom: 3px; }
+  .danger ul { padding-left: 16px; }
+  .danger li { margin-bottom: 1px; color: #922b21; font-size: 9pt; }
 
-  .safety-box { border: 2px solid #27ae60; border-radius: 6px; padding: 8px 10px; margin: 8px 0; background: #eafaf1; }
-  .safety-box .title { color: #27ae60; font-weight: bold; font-size: 11pt; margin-bottom: 4px; }
+  .info { border: 1px solid #f0b27a; border-radius: 6px; padding: 6px 9px; margin: 6px 0; background: #fef9e7; }
+  .info .title { color: #e67e22; font-weight: bold; margin-bottom: 3px; font-size: 9.5pt; }
+  .info ul { padding-left: 16px; }
 
-  .info-box { border: 1px solid #f0b27a; border-radius: 6px; padding: 8px 10px; margin: 8px 0; background: #fef9e7; }
-  .info-box .title { color: #e67e22; font-weight: bold; margin-bottom: 4px; }
+  .safety { border: 2px solid #27ae60; border-radius: 6px; padding: 6px 9px; margin: 6px 0; background: #eafaf1; }
+  .safety .title { color: #27ae60; font-weight: bold; font-size: 10pt; margin-bottom: 3px; }
 
-  .phase-label { display: inline-block; background: #27ae60; color: #fff; font-size: 8pt; padding: 2px 8px; border-radius: 10px; font-weight: bold; }
-  .phase-label.p2 { background: #2980b9; }
-
-  .two-col { display: flex; gap: 10px; }
+  .two-col { display: flex; gap: 8px; }
   .two-col > div { flex: 1; }
 
-  .footer { text-align: center; font-size: 8pt; color: #999; margin-top: 10px; border-top: 1px solid #ddd; padding-top: 4px; }
+  .footer { text-align: center; font-size: 7.5pt; color: #999; margin-top: 6px; border-top: 1px solid #ddd; padding-top: 3px; }
 
-  table.schedule { width: 100%; border-collapse: collapse; font-size: 9pt; margin: 6px 0; }
-  table.schedule th { background: #1a5276; color: #fff; padding: 4px 6px; text-align: left; }
-  table.schedule td { border: 1px solid #d5d8dc; padding: 4px 6px; }
-  table.schedule tr:nth-child(even) { background: #f8f9fa; }
+  table.tbl { width: 100%; border-collapse: collapse; font-size: 8.5pt; margin: 4px 0; }
+  table.tbl th { background: #1a5276; color: #fff; padding: 3px 5px; text-align: left; }
+  table.tbl td { border: 1px solid #d5d8dc; padding: 3px 5px; }
+  table.tbl tr:nth-child(even) { background: #f8f9fa; }
 
-  .highlight { background: #f9e79f; padding: 1px 4px; border-radius: 2px; }
+  .tag { display: inline-block; background: #27ae60; color: #fff; font-size: 7.5pt; padding: 1px 7px; border-radius: 10px; font-weight: bold; }
+  .tag2 { background: #2980b9; }
 
   @media print {
-    .page { padding: 8mm 10mm; }
+    .page { padding: 7mm 10mm; }
     body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   }
 </style>
@@ -63,240 +60,199 @@
 
 <!-- Page 1 -->
 <div class="page">
-  <h1>허리 통증 홈운동 가이드</h1>
-  <p class="subtitle">PNUH 요추 재활 프로토콜 &mdash; 초진 환자용</p>
+  <h1>집에서 할 수 있는 허리운동</h1>
+  <p class="subtitle">초진 환자용 홈운동 가이드</p>
   <p class="hospital">부산대학교병원 재활의학과</p>
 
-  <div class="danger-box">
-    <div class="title">&#9888; 절대 하지 마세요! (금기 운동)</div>
+  <div class="danger">
+    <div class="title">&#9888; 절대 하지 마세요!</div>
     <ul>
-      <li><strong>윗몸일으키기(Sit-up/Crunch)</strong> &mdash; 허리 압축력 3,506N! 디스크에 매우 위험</li>
-      <li><strong>V-up / 무릎 당기기(Knee to chest)</strong> &mdash; 허리 굴곡 반복 = 섬유륜 손상</li>
-      <li><strong>고양이-소 운동(Cat-cow) / 전굴 스트레칭</strong> &mdash; 허리 구부리기 금지</li>
+      <li><strong>윗몸일으키기(Sit-up) / 크런치</strong> &mdash; 허리 압축력 3,506N, 디스크에 매우 위험</li>
+      <li><strong>V-up / 무릎 가슴으로 당기기</strong> &mdash; 허리 굴곡 반복 = 섬유륜 손상</li>
+      <li><strong>고양이-소 운동(Cat-cow) / 전굴 스트레칭</strong></li>
       <li><strong>아침 기상 후 1시간 이내 허리 구부리기</strong> &mdash; 디스크 수분 증가로 위험 최대</li>
     </ul>
   </div>
 
-  <div class="info-box">
-    <div class="title">&#128161; 핵심 원칙: 척추 위생(Spine Hygiene)</div>
-    <ul style="padding-left: 18px;">
-      <li><strong>"1초도 허리를 구부리지 않는다"</strong>가 회복의 시작입니다</li>
-      <li>물건 들기, 앉기, 세수 &rarr; 모두 <strong>엉덩이(고관절)</strong>로 움직이세요</li>
-      <li>허리의 자연스러운 C자 곡선(전만)을 항상 유지하세요</li>
+  <h2>1단계: 통증 조절과 자세 교육</h2>
+  <p style="font-size:8.5pt; color:#555; margin-bottom:4px;">대상: 활동 시 통증 5점 이상 | 목표: 바른 자세 + 통증 조절 + 코어 인식</p>
+
+  <div class="card">
+    <div class="name">1. 요추 전만 자세 — 허리의 자연스러운 C자 곡선 만들기 <span class="tag">1단계</span></div>
+    <ul>
+      <li><strong>선 자세:</strong> 배를 앞으로 내밀고 등을 오목하게 &rarr; 골반을 앞뒤로 천천히 움직여 통증 없는 '중립'을 찾기 &rarr; 가슴 활짝 펴기</li>
+      <li><strong>앉은 자세:</strong> 등받이에 기대어 전만을 받쳐 주는 쿠션 사용. 등받이 없으면 오래 앉지 않기</li>
+      <li><strong>누운 자세:</strong> 적절한 탄성의 침대 + 허리 베개 활용</li>
     </ul>
+    <div class="warn">&#128161; 귀(머리 무게중심)가 항문(골반 무게중심)보다 뒤에 오도록 — 이 자세가 되면 허리 근육 긴장이 자연히 풀립니다</div>
   </div>
 
-  <h2>Phase 1: 급성기 운동 (초진~2주)</h2>
-
-  <div class="exercise-card">
-    <div class="title">1. McKenzie 신전운동 &mdash; 엎드려서 <span class="phase-label">Phase 1</span> <span class="video-tag">&#9654; L01</span></div>
-    <ul class="method">
-      <li><strong>1단계:</strong> 엎드려서 이완 (호흡만, 힘 빼기)</li>
-      <li><strong>2단계:</strong> 주먹 받침 (경도 신전)</li>
-      <li><strong>3단계:</strong> 팔꿈치 받침 &mdash; Sphinx 자세 (3분 유지)</li>
-      <li>각 단계 통증 없이 가능하면 다음 단계로</li>
+  <div class="card">
+    <div class="name">2. 맥켄지 신전운동 — 엎드려서 <span class="tag">1단계</span></div>
+    <ul>
+      <li><strong>1단계</strong> 고개 들기: 엎드려 누워 고개만 들고 복식호흡</li>
+      <li><strong>2단계</strong> 턱 받치기: 양손 주먹 포개어 턱 아래에 받침</li>
+      <li><strong>3단계</strong> 팔꿈치 지지: 양 팔꿈치 90&deg; 굽혀 상체 지탱</li>
+      <li><strong>4단계</strong> 상체 일으키기: 팔꿈치 펴서 상체 올리기 (가능한 범위만)</li>
+      <li>통증 없이 5분간 유지할 수 있는 <strong>최적의 단계</strong>를 선택하여 유지</li>
     </ul>
-    <div class="dose">&#128338; <strong>하루 3회, 각 5분</strong> | 아침·점심·저녁</div>
-    <div class="tip">&#9888; 허리 힘 빼고 팔 힘으로만! 다리로 통증 퍼지면(peripheralization) 즉시 중단</div>
+    <div class="dose">&#128338; <strong>취침 전 + 기상 직후 + 통증 악화 시</strong> | 각 5분간 복식호흡</div>
+    <div class="warn">&#9888; 배꼽은 반드시 바닥에! 다리로 통증이 퍼지면 즉시 중단</div>
   </div>
 
-  <div class="exercise-card">
-    <div class="title">2. McKenzie 신전운동 &mdash; 앉아서/서서 <span class="phase-label">Phase 1</span> <span class="video-tag">&#9654; L02</span></div>
-    <ul class="method">
-      <li><strong>앉아서:</strong> 의자에서 요추를 뒤로 젖히기</li>
-      <li><strong>서서:</strong> 골반에 손 대고 뒤로 젖히기</li>
-      <li>매 30분~1시간마다 자세 리셋</li>
+  <div class="card">
+    <div class="name">3. 맥켄지 신전운동 — 앉거나 서서 <span class="tag">1단계</span></div>
+    <ul>
+      <li>양손을 허리에 대고 견갑골을 뒤로 모으면서 허리를 뒤로 젖혀 천장 바라보기</li>
+      <li>통증 없는 최대 신전 범위까지만, 5~10초 유지 후 돌아오기</li>
     </ul>
-    <div class="dose">&#128338; <strong>30분~1시간마다 1~2분</strong> | 사무실·일상 중 수시로</div>
-    <div class="tip">&#9888; 과신전 주의 &mdash; 뒤쪽 통증 시 범위 줄이기</div>
+    <div class="dose">&#128338; <strong>최소 30분에 1회</strong> | 허리 구부린 작업 직후 즉시 시행</div>
+    <div class="warn">&#128161; 전만이 무너진 것을 인지하는 즉시 신전운동 &rarr; 바른 자세로 복귀</div>
   </div>
 
-  <div class="exercise-card">
-    <div class="title">3. ADIM (복부 끌어당기기) <span class="phase-label">Phase 1</span> <span class="video-tag">&#9654; L03</span></div>
-    <ul class="method">
-      <li>누운 자세에서 무릎 세우기</li>
-      <li><strong>"배꼽을 척추 방향으로"</strong> 부드럽게 당기기</li>
-      <li>10초 유지, 정상 호흡 유지</li>
-      <li>자가 확인: 골반뼈 안쪽 손가락으로 근육 수축 촉진</li>
-    </ul>
-    <div class="dose">&#128338; <strong>10회 &times; 3세트 &times; 하루 3회</strong></div>
-    <div class="tip">&#9888; 가볍게! 힘주기가 아니라 "느끼는" 훈련입니다</div>
+  <div class="two-col">
+    <div>
+      <div class="card">
+        <div class="name">4. 복식호흡과 복부 끌어당기기 <span class="tag">1단계</span></div>
+        <ul>
+          <li>입으로 숨 내쉬며 <strong>배꼽을 등 쪽으로</strong> 부드럽게 끌어당기기</li>
+          <li>골반저근육 함께 수축</li>
+          <li>7초 유지 &rarr; 코로 들이쉬며 이완</li>
+        </ul>
+        <div class="dose">&#128338; 20회 반복 &times; 하루 3회</div>
+      </div>
+    </div>
+    <div>
+      <div class="card">
+        <div class="name">5. 복부 고정법 (Bracing) <span class="tag">1단계</span></div>
+        <ul>
+          <li>골반뼈(ASIS) 안쪽 1cm에 손가락 대기</li>
+          <li>헛기침하듯 배·허리에 가볍게 힘주기</li>
+          <li>손가락 아래 근육이 단단해지는 것 확인</li>
+          <li>7초 유지 &rarr; 이완, 호흡 유지</li>
+        </ul>
+        <div class="dose">&#128338; 20회 &times; 하루 3회</div>
+      </div>
+    </div>
   </div>
 
-  <div class="exercise-card">
-    <div class="title">4. Bracing (자연복대 만들기) <span class="phase-label">Phase 1</span> <span class="video-tag">&#9654; L04</span></div>
-    <ul class="method">
-      <li>"기침 준비" 자세 &mdash; 배 전체를 가볍게 긴장</li>
-      <li>ADIM 습득 후 전환</li>
-      <li>10% 힘 &mdash; <strong>가볍게, 자연스럽게</strong></li>
+  <div class="card">
+    <div class="name">6. 힙힌지 — 움직임 패턴 인식 훈련 <span class="tag">1단계</span></div>
+    <ul>
+      <li><strong>힙힌지 스쿼트:</strong> 무릎을 앞으로 내밀지 않고 <strong>엉덩이를 먼저 뒤로</strong> 보내기. 손을 허벅지에 대고 20~30&deg;만 살짝 앉았다 일어나기</li>
+      <li><strong>앉아서 일어서기:</strong> 요추 전만 유지 &rarr; 고관절로 상체 살짝 앞으로 &rarr; <strong>둔근으로 엉덩이를 앞으로 밀며</strong> 일어서기</li>
     </ul>
-    <div class="dose">&#128338; <strong>10회 &times; 3세트 &times; 하루 3회</strong></div>
+    <div class="dose">&#128338; 세트·횟수에 얽매이지 말고, <strong>"허리가 아닌 고관절을 사용한다"</strong>는 패턴을 몸으로 익히기</div>
+    <div class="warn">&#128161; 근력 운동이 아닙니다 — 움직임 개념을 인식하는 훈련입니다</div>
   </div>
 
-  <div class="exercise-card">
-    <div class="title">5. Hip Hinge (일상 동작 교정) <span class="phase-label">Phase 1</span> <span class="video-tag">&#9654; L05</span></div>
-    <ul class="method">
-      <li><strong>앉기/일어서기:</strong> 엉덩이로 접기, 허리 곧게</li>
-      <li><strong>물건 들기:</strong> 무릎+엉덩이로, 허리 중립 유지</li>
-      <li><strong>누웠다 일어나기:</strong> 옆으로 돌아 팔로 밀기</li>
-    </ul>
-    <div class="dose">&#128338; 모든 일상 동작에 적용 &mdash; <strong>"허리가 아니라 엉덩이로"</strong></div>
-  </div>
-
-  <div class="exercise-card">
-    <div class="title">6. 걷기 <span class="phase-label">Phase 1</span> <span class="video-tag">&#9654; L12</span></div>
-    <ul class="method">
-      <li>통증 허용 범위 내 속도로 평지 걷기</li>
-      <li>허리 꼿꼿이, 시선 정면 15&deg; 위</li>
-      <li><strong>아침 기상 후 1시간 이후</strong>에 시작</li>
-    </ul>
-    <div class="dose">&#128338; <strong>10~15분/일</strong> &rarr; 점진적으로 증가 (목표: 30~40분)</div>
-    <div class="tip">&#128161; 걷기는 디스크 재생에 가장 좋은 운동입니다 (Belavy 2017)</div>
+  <div class="info">
+    <div class="title">&#128197; 1단계 하루 운동 요약</div>
+    <table class="tbl">
+      <tr><th>시간</th><th>운동</th><th>용량</th></tr>
+      <tr><td>기상 직후</td><td>맥켄지 엎드려서</td><td>5분 복식호흡</td></tr>
+      <tr><td>기상 후 1시간~<br>일과 중</td><td>맥켄지 앉거나 서서<br>복부 끌어당기기 + 복부 고정</td><td>30분마다 1회<br>20회 &times; 3회/일</td></tr>
+      <tr><td>수시</td><td>힙힌지 패턴 연습<br>(스쿼트, 앉기/일어서기)</td><td>일상 동작에 적용</td></tr>
+      <tr><td>취침 전</td><td>맥켄지 엎드려서</td><td>5분 복식호흡</td></tr>
+    </table>
   </div>
 
   <div class="footer">
-    PNUH 재활의학과 | 요추 재활 홈운동 가이드 (1/2) | &#128247; YouTube 영상 번호로 검색하세요
+    PNUH 재활의학과 | 허리 홈운동 가이드 (1/2)
   </div>
 </div>
 
 <!-- Page 2 -->
 <div class="page">
-  <h1>허리 통증 홈운동 가이드 (계속)</h1>
+  <h1>집에서 할 수 있는 허리운동 (계속)</h1>
 
-  <h2>Phase 2: 아급성기 운동 (2~6주 이후, 담당의 확인 후)</h2>
+  <div class="safety">
+    <div class="title">&#10003; 다음 단계로 넘어가도 될까요? &mdash; 3가지 확인</div>
+    <table class="tbl">
+      <tr><th style="width:30%">확인 포인트</th><th>내용</th></tr>
+      <tr><td><strong>허리가 견딜 준비?</strong><br>(조직 보호)</td><td>현재 단계의 운동을 충분히 반복하여 적응 시간을 주었는가?<br>성급하게 올리면 회복 중인 섬유륜이 다시 손상될 수 있습니다</td></tr>
+      <tr><td><strong>운동 다음 날?</strong><br>(24시간 규칙)</td><td>오늘 운동 후 <strong>다음 날까지 통증이 증가하지 않아야</strong> 합니다<br>다음 날 아침에도 악화되면 강도 줄이거나 이전 단계로</td></tr>
+      <tr><td><strong>요추 전만 유지?</strong><br>(동작 정확성)</td><td>전만이 무너지거나, 골반이 뒤로 돌아가거나(엉덩이 윙크),<br>허리에 과도한 힘이 들어가면 아직 다음 단계로 가기 이릅니다</td></tr>
+    </table>
+    <p style="font-size:8.5pt; color:#27ae60; margin-top:3px; font-weight:bold;">&#9888; 세 가지가 모두 충족될 때만 다음 단계로. 하나라도 안 되면 현재 단계를 더 연습하세요.</p>
+  </div>
+
+  <h2>2단계: 통증을 딛고 일상으로의 복귀</h2>
+  <p style="font-size:8.5pt; color:#555; margin-bottom:4px;">대상: 활동 시 통증 3~4점 이하 | 목표: 흉요근막(TLF) 강화, 골반 회전 운동조절능력 향상</p>
+
+  <div class="info">
+    <div class="title">&#128161; 흉요근막(TLF)이란?</div>
+    <p style="font-size:8.5pt;">광배근과 둔근을 연결하여 상·하체의 힘을 전달하는 구조물입니다. 2단계에서는 이 두 근육을 강화하여 추가적인 요추 안정화를 얻습니다.</p>
+  </div>
+
+  <div class="card">
+    <div class="name">7. 엉덩이 뒤로 빼는 스쿼트 (Hip Hinge Squat) <span class="tag tag2">2단계</span></div>
+    <ul>
+      <li>1단계에서 익힌 힙힌지 패턴을 이제 <strong>반복 훈련과 세트로 강화</strong></li>
+      <li>복부 고정 후 엉덩이를 뒤로 빼며 <strong>엉덩이 윙크가 시작되기 직전까지만</strong> 앉기</li>
+      <li>무릎은 발끝보다 앞으로 나가지 않도록, 팔을 앞으로 내밀어 균형 잡기</li>
+      <li>엉덩이 근육을 모으며 일어서기</li>
+    </ul>
+    <div class="dose">&#128338; <strong>8~15회 &times; 3세트</strong> | 천천히, 세트 간 1~2분 휴식</div>
+    <div class="warn">&#128161; 깊이보다 골반 후방경사가 일어나지 않는 범위를 지키는 것이 가장 중요!</div>
+  </div>
 
   <div class="two-col">
     <div>
-      <div class="exercise-card">
-        <div class="title">7. Modified Side Plank <span class="phase-label p2">Phase 2</span> <span class="video-tag">&#9654; L07</span></div>
-        <ul class="method">
-          <li>무릎 구부린 상태로 옆으로 지지</li>
-          <li>30초 유지, 양측 교대</li>
-          <li>허리 굴곡 없이 안전</li>
+      <div class="card">
+        <div class="name">8. 엉덩이 벌리기 운동 (Hip Abduction) <span class="tag tag2">2단계</span></div>
+        <ul>
+          <li>요추 전만 유지하고 의자에 앉기</li>
+          <li>탄성밴드 또는 기계 사용</li>
+          <li>전만이 무너지지 않는 범위·저중량으로 다리 벌리기</li>
+          <li>상체에 힘이 많이 들어가지 않게</li>
         </ul>
-        <div class="dose">&#128338; 30초 &times; 3세트 &times; 1회/일</div>
-      </div>
-
-      <div class="exercise-card">
-        <div class="title">8. Hip Abduction <span class="phase-label p2">Phase 2</span> <span class="video-tag">&#9654; L08</span></div>
-        <ul class="method">
-          <li>옆으로 누워서 다리 들어올리기</li>
-          <li>발끝 정면 향하게, 골반 안정</li>
-          <li>둔근(엉덩이 근육) 강화</li>
-        </ul>
-        <div class="dose">&#128338; 15회 &times; 3세트 &times; 3회/일</div>
-      </div>
-
-      <div class="exercise-card">
-        <div class="title">9. PHE (엎드려 둔근 운동) <span class="phase-label p2">Phase 2</span> <span class="video-tag">&#9654; L10</span></div>
-        <ul class="method">
-          <li>엎드려서 무릎 구부린 채</li>
-          <li>다리 30&deg; 외전 후 둔근으로 거상</li>
-          <li>무릎 반드시 구부리기!</li>
-        </ul>
-        <div class="dose">&#128338; 15회 &times; 3세트 &times; 1회/일</div>
+        <div class="dose">&#128338; <strong>8~15회 &times; 3세트</strong><br>천천히, 세트 간 1~2분 휴식</div>
+        <div class="warn">&#9888; 근피로 시 멈추기<br>수축불능까지 하면 안 됩니다</div>
       </div>
     </div>
     <div>
-      <div class="exercise-card">
-        <div class="title">10. Seated Row (밴드) <span class="phase-label p2">Phase 2</span> <span class="video-tag">&#9654; L09</span></div>
-        <ul class="method">
-          <li>앉아서 밴드 당기기</li>
-          <li>흉추 펴고, 견갑골 모으기</li>
-          <li>활배근 = 허리를 감싸는 근육!</li>
+      <div class="card">
+        <div class="name">9. 앉아서 노젓기 (Seated Row) <span class="tag tag2">2단계</span></div>
+        <ul>
+          <li>체간 지지 의자에 요추 전만 유지하고 앉기</li>
+          <li>상체 앞뒤 움직임 없이 <strong>광배근 제한 범위만</strong> 사용</li>
+          <li>케이블 또는 밴드를 당겼다 천천히 놓기</li>
         </ul>
-        <div class="dose">&#128338; 15회 &times; 3세트 &times; 3회/일</div>
-      </div>
-
-      <div class="exercise-card">
-        <div class="title">11. Heel Lift (종아리) <span class="phase-label p2">Phase 2</span> <span class="video-tag">&#9654; L11</span></div>
-        <ul class="method">
-          <li>양발 &rarr; 한발 calf raise</li>
-          <li>천천히 올리고 천천히 내리기</li>
-        </ul>
-        <div class="dose">&#128338; 15회 &times; 3세트 &times; 1회/일</div>
-      </div>
-
-      <div class="exercise-card">
-        <div class="title">12. 바르게 걷기 <span class="phase-label p2">Phase 2+</span> <span class="video-tag">&#9654; L12</span></div>
-        <ul class="method">
-          <li>자연복대(bracing) 유지하며 보행</li>
-          <li>30~40분/일 목표</li>
-          <li>빠르게 걷기(~2m/s) 포함</li>
-        </ul>
-        <div class="dose">&#128338; 30~40분/일, 주 5회 이상</div>
+        <div class="dose">&#128338; <strong>8~15회 &times; 3세트</strong><br>천천히, 세트 간 1~2분 휴식</div>
+        <div class="warn">&#9888; 욕심내어 전범위 사용하려고<br>허리를 움직이지 않기!</div>
       </div>
     </div>
   </div>
 
-  <h2>Phase 3 운동 &mdash; 반드시 치료실 습득 후!</h2>
-  <div class="info-box">
-    <div class="title">&#9888; 아래 운동은 치료실에서 먼저 배운 후 집에서 하세요</div>
-    <table class="schedule">
-      <tr>
-        <th>운동</th><th>영상</th><th>핵심 포인트</th><th>용량</th>
-      </tr>
-      <tr>
-        <td>McGill Big 3<br>(Curl-up / Side plank / Bird dog)</td>
-        <td>L15</td>
-        <td>5-3-1 피라미드<br>8~10초 유지, 20~30초 휴식</td>
-        <td>1~2회/일</td>
-      </tr>
-      <tr>
-        <td>Back Bridge (양발&rarr;한발)</td>
-        <td>L13</td>
-        <td>한 덩어리로 올리기<br>PPT로 시작하지 않기!</td>
-        <td>15회&times;3세트<br>1회/일</td>
-      </tr>
-      <tr>
-        <td>Dead Bug (neutral spine)</td>
-        <td>L14</td>
-        <td><span class="highlight">바닥에 붙이지 마세요!</span><br>자연 전만 유지하며 사지 움직이기</td>
-        <td>10회&times;3세트<br>1회/일</td>
-      </tr>
-      <tr>
-        <td>Plank &rarr; Plank + hip ext</td>
-        <td>L18</td>
-        <td>엎드려 지지, 굴곡 불가</td>
-        <td>30초&times;3세트</td>
-      </tr>
+  <div class="info">
+    <div class="title">&#128197; 2단계 진입 기준 체크리스트</div>
+    <table class="tbl">
+      <tr><th style="width:30%">확인</th><th>내용</th></tr>
+      <tr><td>조직 보호</td><td>1단계 운동(맥켄지, 복부 고정, 힙힌지)을 활동 시 통증 3~4점 이하로 수행 가능</td></tr>
+      <tr><td>24시간 규칙</td><td>1단계 운동 후 다음 날까지 통증 증가 없음, 방사통 악화 없음</td></tr>
+      <tr><td>동작 정확성</td><td>복부 고정 상태로 보행 시 전만 유지, 힙힌지에서 골반 후방경사 없이 수행 가능</td></tr>
     </table>
   </div>
 
-  <div class="safety-box">
-    <div class="title">&#128154; 통증 신호등 &mdash; 이렇게 판단하세요</div>
-    <table class="schedule">
-      <tr>
-        <th style="background:#27ae60">&#128994; 초록 (진행 OK)</th>
-        <th style="background:#f39c12">&#128992; 노랑 (유지)</th>
-        <th style="background:#e74c3c">&#128308; 빨강 (중단!)</th>
-      </tr>
-      <tr>
-        <td>운동 중 통증 &le;3점<br>다음 날 아침 원래대로</td>
-        <td>운동 중 통증 4~5점<br>24시간 내 원래대로</td>
-        <td>통증 &ge;6점 또는<br>다리로 통증 퍼짐<br>다음 날 악화<br>야간 통증 출현</td>
-      </tr>
-      <tr>
-        <td>&rarr; 다음 단계 고려</td>
-        <td>&rarr; 현재 단계 유지</td>
-        <td>&rarr; <strong>운동 즉시 중단<br>담당의 상담</strong></td>
-      </tr>
+  <div class="danger">
+    <div class="title">&#9888; 자주 묻는 질문</div>
+    <table class="tbl">
+      <tr><th style="width:35%">질문</th><th>답변</th></tr>
+      <tr><td>신전운동에서 통증이 있을 때</td><td>후관절 통증 &rarr; 유발 직전까지만 신전. 방사통 유발 &rarr; 척추시술 필요할 수 있음. 중심부 살짝 시큰함 &rarr; 섬유륜이 맞닿으며 생기는 것, 악화 없으면 지속 가능</td></tr>
+      <tr><td>운동 중 안 아팠는데<br>나중에 아파요</td><td>2시간 후, 밤에, 다음 날 아침에 아파지는 것도 나쁜 운동입니다. 운동 강도를 줄이세요</td></tr>
+      <tr><td>회복에 걸리는 시간</td><td>통증 회복과 디스크 회복은 다릅니다. 최소 1년 반, 나이·병력에 따라 3~4년 이상 걸릴 수 있습니다</td></tr>
+      <tr><td>허리가 뻣뻣해요</td><td>섣부른 굴곡 스트레칭은 회복 중인 섬유륜을 다시 손상시킬 수 있습니다. 충분한 시간이 지나면 자연히 개선됩니다</td></tr>
     </table>
   </div>
 
-  <div class="info-box">
-    <div class="title">&#128197; 하루 운동 스케줄 요약 (Phase 1)</div>
-    <table class="schedule">
-      <tr><th>시간</th><th>운동</th><th>용량</th></tr>
-      <tr><td>아침<br>(기상 1시간 후)</td><td>McKenzie 엎드려서<br>ADIM/Bracing</td><td>5분<br>10회&times;3세트</td></tr>
-      <tr><td>오전~오후<br>(30분~1시간 간격)</td><td>McKenzie 앉아서/서서</td><td>1~2분씩</td></tr>
-      <tr><td>점심 전후</td><td>McKenzie 엎드려서<br>걷기</td><td>5분<br>10~15분</td></tr>
-      <tr><td>저녁</td><td>McKenzie 엎드려서<br>ADIM/Bracing<br>걷기</td><td>5분<br>10회&times;3세트<br>10~15분</td></tr>
-    </table>
+  <div class="safety">
+    <div class="title">&#128154; 걷기 — 디스크에 가장 좋은 운동</div>
+    <p style="font-size:9pt;">규칙적인 걷기·조깅은 추간판의 수분과 높이를 유지하는 데 도움이 됩니다 (Belavy 2017). <strong>1단계부터 통증 없는 범위의 걷기를 시작</strong>하세요. 아침 기상 후 1시간 이후, 10~15분/일부터 점진 증가합니다.</p>
   </div>
 
   <div class="footer">
-    PNUH 재활의학과 | 요추 재활 홈운동 가이드 (2/2) | 담당의 지시에 따라 Phase를 진행하세요<br>
+    PNUH 재활의학과 | 허리 홈운동 가이드 (2/2) | 담당의 지시에 따라 단계를 진행하세요<br>
     환자명: _________________ | 진료일: ______년 ______월 ______일 | 담당의: _________________
   </div>
 </div>
